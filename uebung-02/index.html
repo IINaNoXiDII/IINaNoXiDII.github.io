@@ -28,10 +28,10 @@
                 <div class="burger-icon"><i class="fas fa-bars" onclick="document.getElementById('mobile-nav').style.height= '330px'"></i>
                 </div>
                 <ul>
-                    <li><a href="#"onclick="document.getElementById('mobile-nav').style.height= '50px'">Top</a></li>
-                    <li><a href="#my-about"onclick="document.getElementById('mobile-nav').style.height= '50px'">Über mich</a></li>
-                    <li><a href="#my-skills"onclick="document.getElementById('mobile-nav').style.height= '50px'">Warum ich</a></li>
-                    <li><a href="#my-contact"onclick="document.getElementById('mobile-nav').style.height= '50px'">Kontakt</a></li>
+                    <li><a href="#"onclick="toggleMobileNav()">Top</a></li>
+                    <li><a href="#my-about"onclick="toggleMobileNav()">Über mich</a></li>
+                    <li><a href="#my-skills"onclick="toggleMobileNav()">Warum ich</a></li>
+                    <li><a href="#my-contact"onclick="toggleMobileNav()">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -120,5 +120,15 @@
                 &copy; 2019 Dennis Bohrer
             </p>
         </footer>
+        <script>
+          function toggleMobileNav(){
+            var x = document.getElementById("mobile-nav");
+            if(x.style.height === "330px"){
+              x.style.height = "50px";
+            } else{
+              x.style.height= "330px"
+            }
+        }
+        </script>
     </body>
 </html>
