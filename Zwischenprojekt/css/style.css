@@ -26,7 +26,7 @@ nav.main-nav {
 }
 
 h1 {
-    font-family: 'Monoton', cursive; 
+    font-family: 'Monoton', cursive;
 }
 
 h2, h3, h4, p{
@@ -76,7 +76,7 @@ nav.mobile-nav ul li a {
   background-color: rgb(255, 255, 255, 0.8);
   color: #000;
   font-size: 2.5em;
-  font-family: arial;
+  font-family: Orbitron;
   width: 100%;
 }
 
@@ -104,6 +104,9 @@ nav.mobile-nav ul li a {
   width: 80%;
 }
 
+.container {
+  text-align: center;
+}
 
 
 /* Produkt Anfang */
@@ -202,9 +205,17 @@ ul.colors li {
     height: 16px;
 }
 
+.colors p {
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #262626;
+}
+
 /* Farbfelder Anfang */
 ul.colors li:nth-child(1) {
-    background: #000;
+    background: green;
     box-shadow: 0 5px 15px rgba(0, 0, 0,.25);
 }
 /* Farbfelder Ende */
