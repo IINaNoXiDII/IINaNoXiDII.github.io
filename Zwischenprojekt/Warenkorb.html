@@ -39,9 +39,22 @@
     </header>
 
     <h1>Warenkorb</h1>
-    <p>Produkt</p>
-    <p>Menge</p>
-    <p>Preis</p>
+    <table>
+      <thead>
+        <tr>
+          <th class="thead">Produkt</th>
+          <th class="thead">Menge</th>
+          <th class="thead">Preis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bollerwagen</td>
+          <td>2</td>
+          <td>89,99€</td>
+        </tr>
+      </tbody>
+    </table>
     <h2>Adressdaten</h2>
     <div class="kontaktdaten">
       <label for="name">Name:</label>
@@ -60,5 +73,6 @@
       <label for="iban">IBAN:</label>
       <input type="string" name="iban" id="iban" required="" />
     </div>
+    <div class="tabelle"></div>
   </body>
 </html>
