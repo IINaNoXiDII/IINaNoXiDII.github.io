@@ -3,14 +3,20 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Warenkorb</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4670ef02f5.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <header>
       <nav class="main-nav">
-        <div class="logo">
-          <img src="img/logoWhite.png" alt="Firmenlogo von UrbanMove">
+        <div class="header">
+            <div class="burger-icon"></div>
+            <div class="logo"><i class="fas fa-bars" onclick="toggleMobileNav()"></i><img src="img/textWhite.png" alt="Firmenlogo von UrbanMove"></div>
         </div>
         <ul>
           <li><a href="#">Home</a></li>
@@ -26,7 +32,7 @@
       <p>Produkt</p>
       <p>Menge</p>
       <p>Preis</p>
-      <div class="name">
+      <div class="kontaktdaten">
         <label for="name">Name:</label>
         <input type="string" name="name" id="name" required="">
         <label for="adresse">Adresse:</label>
@@ -35,6 +41,10 @@
         <input type="number" name="plz" id="plz" required="">
         <label for="ort">Ort:</label>
         <input type="string" name="ort" id="ort" required="">
+      </div>
+      <div class="button">
+        <input type="submit" value="Paypal" name="paypal" id="paypal" onclick="setTimeout(3000)">
+
       </div>
 
 
