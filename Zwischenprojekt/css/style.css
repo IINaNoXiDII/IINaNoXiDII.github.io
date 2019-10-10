@@ -12,125 +12,125 @@
 /*-------------------
                 Layout
              -------------------*/
-             /* Produkt Anfang */
-             .product {
-                 position: relative;
-                 display: inline-block;
-                 margin: 0 20px;
-                 margin-top: 20px;
-                 margin-bottom: 20px;
-                 width: 240px;
-                 height: 340px;
-                 background: #fff;
-                 box-shadow: 0 5px 15px rgba(0, 0, 0,.25);
-                 border-radius: 5px;
-                 overflow: hidden;
-             }
+/* Produkt Anfang */
+.product {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 340px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,.25);
+    border-radius: 5px;
+    overflow: hidden;
+}
 
-             .product .imgbox {
-                 height: 100%;
-                 box-sizing: border-box;
-             }
+.product .imgbox {
+    height: 100%;
+    box-sizing: border-box;
+}
 
-             .product .imgbox img {
-                 display: block;
-                 width: 70%;
-                 margin: 20px auto 0;
-             }
+.product .imgbox img {
+    display: block;
+    width: 70%;
+    margin: 20px auto 0;
+}
 
-             .details {
-                 position: absolute;
-                 text-align: left;
-                 width: 100%;
-                 bottom: -150px;
-                 background: #fff;
-                 padding: 10px;
-                 box-sizing: border-box;
-                 box-shadow: 0 0 0 rgba(0,0,0,0);
-                 transition: .5s;
-             }
+.details {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: -150px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: .5s;
+}
 
-             .product:hover .details {
-                 bottom: 0;
-                 box-shadow: 0 -5px 15px rgba(0, 0, 0,.25);
-             }
+.product:hover .details {
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0,.25);
+}
 
-             .details h2 {
-                 margin: 0;
-                 padding: 0;
-                 font-size: 18px;
-                 width: 100%;
-                 font-weight: bold;
-             }
+.details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+}
 
-             .details h2 span {
-                 font-size: 14px;
-                 color: #262626;
-                 font-weight: normal;
-             }
+.details h2 span {
+    font-size: 14px;
+    color: #262626;
+    font-weight: normal;
+}
 
-             .details .price {
-                 position: absolute;
-                 top: 10px;
-                 right: 20px;
-                 font-weight: bold;
-                 font-size: 20px;
-             }
+.details .price {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-             .details label {
-                 display: block;
-                 margin-top: 13px;
-                 margin-bottom: 0px;
-                 font-weight: bold;
-                 font-size: 14px;
-             }
+.details label {
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-             .details ul {
-                 display: flex;
-                 margin: 0;
-                 padding: 0;
-             }
+.details ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-             .details ul li {
-                 list-style: none;
-                 margin: 5px 5px 0;
-                 font-size: 12px;
-                 font-weight: normal;
-                 color: #262626;
-             }
+.details ul li {
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #262626;
+}
 
-             .details ul li:first-child {
-                 margin-left: 0;
-             }
+.details ul li:first-child {
+    margin-left: 0;
+}
 
-             ul.colors li {
-                 width: 16px;
-                 height: 16px;
-             }
-             /* Farbfelder Anfang */
-             ul.colors li:nth-child(1) {
-                 background: #000;
-                 box-shadow: 0 5px 15px rgba(0, 0, 0,.25);
-             }
-             /* Farbfelder Ende */
-             .details a {
-                 display: block;
-                 padding: 5px;
-                 color: #fff;
-                 margin: 15px 0 0;
-                 background: #dc3545;
-                 text-align: center;
-                 text-decoration: none;
-                 transition: .3s;
-                 cursor: pointer;
-             }
+ul.colors li {
+    width: 16px;
+    height: 16px;
+}
+/* Farbfelder Anfang */
+ul.colors li:nth-child(1) {
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,.25);
+}
+/* Farbfelder Ende */
+.details a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 15px 0 0;
+    background: #dc3545;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
 
-             .details a:hover {
-                 color: #fff;
-                 background-color: #cf000f;
-                 text-decoration: none;
-             }
-             /* Produkt Ende */
+.details a:hover {
+    color: #fff;
+    background-color: #cf000f;
+    text-decoration: none;
+}
+/* Produkt Ende */
 /*------------------
             Color & Style
              -------------------*/
@@ -142,3 +142,6 @@ body {
 /*--------------------------
             Responsive Design
             --------------------*/
+@media (min-weight: 768px) {
+  
+}
