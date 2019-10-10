@@ -10,13 +10,13 @@
 }
 
 header {
-  height: 58px;
+  height: 105px;
 }
 
 /*---------------------
 Navigation
 ---------------------*/
-nav {
+.main-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,35 +35,37 @@ h2, h3, h4, p, table,div{
   font-family: 'Orbitron', cursive;
 }
 
-nav .logo {
-    float: right;
+.main-nav .logo {
+    float: left;
 }
 
-nav .logo img {
+.main-nav .logo img {
     height: 80px;
 }
 
-nav ul {
+.main-nav ul {
     float: right;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li {
+.main-nav ul li {
     list-style: none;
 }
-/*Kategorien (Name, Farbe)*/
-nav ul li a {
+
+.main-nav ul li a {
     line-height: 80px;
+    font-size: 18px;
+    font-family: Orbitron;
     color: #fff;
     padding: 5px 20px;
+    border-radius: 20px;
     text-decoration: none;
 }
 
-/*Home Buttom Hintergrundfarbe und Hoverfarbe*/
-nav ul li a.active,
-nav ul li a:hover {
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
     color: #fff;
     background: cadetblue;
     text-decoration: none;
@@ -77,7 +79,7 @@ nav ul li a:hover {
     display: none;
     width: 100%;
     height: 60px;
-    background: #262626;
+    background: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -87,20 +89,21 @@ nav ul li a:hover {
 }
 
 .mobile-nav .logo img {
-    float: left;
+    float: right;
+    padding-right: 24%;
     height: 50px;
 }
 
 .mobile-nav .burger-icon i {
-   float: right;
+   float: left;
    color: #fff;
-   margin: 0;
-   padding: 0;
+
    line-height: 50px;
-   cursor: pointer;
-   text-transform: uppercase;
 }
 
+.container {
+  text-align: center;
+}
 
 /* Produkt Anfang */
 .product {
@@ -266,44 +269,42 @@ body {
 /*--------------------------
             Responsive Design
             --------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  header {
+    height: 59px;
+  }
+
   .mobile-nav {
     display: block;
   }
 
-  nav {
-     background: #262626;
-     height: 60px;
-     padding: 0;
-  }
-
-  nav .logo {
+  .main-nav .logo {
      display: none;
   }
 
-  nav ul {
+  .main-nav ul {
      position: absolute;
      width: 100%;
      top: 60px;
      left: 0;
-     background: #262626;
-     float: none;
+     background: #fff;
      display: none;
   }
 
-  nav ul.active {
+  .main-nav ul.active {
      display: block;
   }
 
-  nav ul li {
+  .main-nav ul li {
      width: 100%;
   }
 
-  nav ul li a {
+  .main-nav ul li a {
      display: block;
      padding: 0;
      width: 100%;
+     border-radius: 0;
      text-align: center;
-     line-height: 30px !important;
-     color: #fff;
+     line-height: 30px;
+     color: #000;
   }
