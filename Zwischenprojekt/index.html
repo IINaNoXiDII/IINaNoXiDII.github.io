@@ -14,10 +14,10 @@
     <script>
       function toggleMobileNav() {
         var x = document.getElementById("mobile-nav");
-        if (x.style.height === "330px") {
+        if (x.style.height === "300px") {
           x.style.height = "50px";
         } else {
-          x.style.height = "330px";
+          x.style.height = "300px";
         }
       }
     </script>
@@ -34,8 +34,13 @@
       </nav>
 
       <nav id="mobile-nav" class="mobile-nav">
+          <div class="burger-icon">
+            <i class="fas fa-bars" onclick="toggleMobileNav()"></i>
+          </div>
+          <div class="logo">
+            <img src="img/textWhite.png" alt="Firmenlogo von UrbanMove">
+          </div>
         <ul>
-          <div class="burger-icon"><i class="fas fa-bars" onclick="toggleMobileNav()"></i></div>
           <li><a href="#" onclick="toggleMobileNav()">Home</a></li>
           <li><a href="#" onclick="toggleMobileNav()">Page1</a></li>
           <li><a href="#" onclick="toggleMobileNav()">Page2</a></li>
