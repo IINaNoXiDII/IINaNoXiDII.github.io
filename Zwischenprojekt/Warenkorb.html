@@ -2,14 +2,23 @@
 
 <html lang="de">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Warenkorb</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
       function toggleMobileNav() {
@@ -34,23 +43,25 @@
       </nav>
 
       <nav id="mobile-nav" class="mobile-nav">
-          <div class="burger-icon">
-            <i class="fas fa-bars" onclick="toggleMobileNav()"></i>
-          </div>
-          <div class="logo">
-            <img src="img/textWhite.png" alt="Firmenlogo von UrbanMove">
-          </div>
+        <div class="burger-icon">
+          <i class="fas fa-bars" onclick="toggleMobileNav()"></i>
+        </div>
+        <div class="logo">
+          <img src="img/textWhite.png" alt="Firmenlogo von UrbanMove" />
+        </div>
         <ul>
           <li><a href="index.html" onclick="toggleMobileNav()">Home</a></li>
           <li><a href="#" onclick="toggleMobileNav()">Page1</a></li>
           <li><a href="#" onclick="toggleMobileNav()">Page2</a></li>
-          <li><a href="warenkorb.html" onclick="toggleMobileNav()">Warenkorb</a></li>
+          <li>
+            <a href="warenkorb.html" onclick="toggleMobileNav()">Warenkorb</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <h1>Warenkorb</h1>
-    <table>
+    <table class="tabelle">
       <thead>
         <tr>
           <th class="thead">Produkt</th>
@@ -61,29 +72,37 @@
       <tbody>
         <tr>
           <td>Bollerwagen</td>
-          <td>2</td>
+          <td>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select></td>
           <td>89,99€</td>
         </tr>
       </tbody>
     </table>
     <h2>Adressdaten</h2>
-    <div class="kontaktdaten">
-      <label for="name">Name:</label>
-      <input type="string" name="name" id="name" required="" />
-      <label for="adresse">Adresse:</label>
-      <input type="string" name="adresse" id="adresse" required="" />
-      <label for="plz">PLZ:</label>
-      <input type="number" name="plz" id="plz" required="" />
-      <label for="ort">Ort:</label>
-      <input type="string" name="ort" id="ort" required="" />
-    </div>
+    <form class ="kontaktdaten">
+      <fieldset>
+        <legend>Personalia:</legend>
+        Name: <input type="text" /><br />
+        Adresse: <input type="text" /><br />
+        PLZ: <input type="number" /> Ort: <input type="text" />
+      </fieldset>
+    </form>
     <h2>Bankverbindung</h2>
-    <div class="bankdaten">
-      <label for="kontoinhaber">Kontoinhaber:</label>
-      <input type="string" name="kontoinhaber" id="kontoinhaber" required="" />
-      <label for="iban">IBAN:</label>
-      <input type="string" name="iban" id="iban" required="" />
-    </div>
-    <div class="tabelle"></div>
+    <form class="bankdaten">
+      <fieldset>
+        <legend>Personalia:</legend>
+        Kontoinhaber: <input type="text" /><br />
+        IBAN: <input type="text" /><br />
+      </fieldset>
+    </form>
   </body>
+  <footer>
+    <p>&copy; 2019 Urban Move</p>
+  </footer>
 </html>
