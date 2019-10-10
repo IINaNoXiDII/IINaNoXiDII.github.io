@@ -25,6 +25,15 @@ nav.main-nav {
   top: 0;
 }
 
+h1 {
+    font-family: 'Monoton', cursive; 
+}
+
+h2, h3, h4, p{
+font-family: 'Orbitron', cursive;
+
+}
+
 nav.main-nav ul {
   display: flex;
   list-style-type: none;
