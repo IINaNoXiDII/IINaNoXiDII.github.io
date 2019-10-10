@@ -5,7 +5,8 @@
 
 .ProduktFlexBox {
     display: flex;
-    padding-left:  900px;
+    padding-left:  35%;
+    
 
 }
 
@@ -21,6 +22,7 @@
 .ProduktText {
  font-size: 1em;
 padding-left: 20px;
+    width: 35%
 }
 
 p {
@@ -34,13 +36,23 @@ h2 {
 .fa-cart-plus  {
     font-size: 300%;
     padding-top: 15px;
-    padding-right: 10px;
+
+    padding-bottom: 16px;
+        width: 100%;
 }
 .PlusCart {
     background-color: limegreen;
     text-align: center;
+    width: 100%;
+    height: 80px;
+}
+ .PlusCart :hover {
+  background-color: yellow;
 }
 
+.buttontext {
+    text-align: center;
+}
 /*--------------------------
             Responsive Design
             --------------------*/
