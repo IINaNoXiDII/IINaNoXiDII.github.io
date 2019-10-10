@@ -1,5 +1,10 @@
 
         <style>
+
+            .placeholder {
+                width="0%";
+            }
+            
             p {
                 padding-bottom: 10px;
             }
@@ -13,7 +18,7 @@
             }
 
             body {
-                font-size: 25px;
+                font-size: 1.5em;
             }
 
             .ProduktFlexBox {
@@ -48,7 +53,7 @@
                 width: 50%;
             }
             
-            .Placeholder {
+            .placeholder {
                 width: 25%;
             }
 
@@ -57,5 +62,14 @@
             --------------------*/
 
 @media only screen and (min-width: 600px) {
+    
+    body {
+        font-size: 1em;
+    }    
+      .placeholder {
+        width: 25%;
+    }
+    
+
 }
         </style>
