@@ -236,6 +236,24 @@ ul.colors li:nth-child(1) {
     background-color: #cf000f;
     text-decoration: none;
 }
+
+.kontaktdaten{
+  margin-left: 20px;
+}
+
+.bankdaten{
+  margin-left: 20px;
+}
+
+.tabelle{
+  margin-left: 20px;
+}
+
+th{
+  text-align: left;
+}
+
+
 /* Produkt Ende */
 /*------------------
             Color & Style
