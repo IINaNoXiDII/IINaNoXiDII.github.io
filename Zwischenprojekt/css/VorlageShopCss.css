@@ -3,6 +3,43 @@
 }
 
 
+.ProduktFlexBox {
+    display: flex;
+    padding-left:  900px;
+
+}
+
+.ProduktImage {
+    width: 30%;
+}
+
+.Placeholder {
+    width: "30%";
+}
+
+
+.ProduktText {
+ font-size: 1em;
+padding-left: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+.fa-cart-plus  {
+    font-size: 300%;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.PlusCart {
+    background-color: limegreen;
+    text-align: center;
+}
 
 /*--------------------------
             Responsive Design
@@ -15,5 +52,6 @@
     .my-skills {
         display: block;
     }
+    
 
 }
