@@ -16,7 +16,6 @@ header {
 /*---------------------
 Navigation
 ---------------------*/
-<<<<<<< HEAD
 nav {
     position: fixed;
     top: 0;
@@ -27,36 +26,14 @@ nav {
     box-sizing: border-box;
     z-index: 10;
   }
-=======
-nav.mobile-nav,
-nav.main-nav {
-  position: fixed;
-  width: 100%;
-  background-color: #000;
-  padding-bottom: 20px;
-  top: 0;
-}
 
 h1 {
     font-family: 'Monoton', cursive;
 }
 
 h2, h3, h4, p, table,div{
-font-family: 'Orbitron', cursive;
-
+  font-family: 'Orbitron', cursive;
 }
-
-nav.main-nav ul {
-  display: flex;
-  list-style-type: none;
-  height: 100%;
-}
-
-nav.main-nav ul li {
-  padding-left: 20px;
-  margin-top: 20px;
-}
->>>>>>> 86fa51d0f3c8596c4b69855805f8c58a0b86c8cf
 
 nav .logo {
     float: right;
