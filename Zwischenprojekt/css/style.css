@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+header {
+  height: 58px;
+}
+
 /*---------------------
 Navigation
 ---------------------*/
@@ -24,6 +28,7 @@ nav.main-nav {
 nav.main-nav ul {
   display: flex;
   list-style-type: none;
+  height: 100%;
 }
 
 nav.main-nav ul li {
@@ -41,14 +46,20 @@ nav.main-nav ul li a {
 
 nav.mobile-nav ul li a:hover,
 nav.main-nav ul li a:hover {
-  background-color: rgb(255, 90, 0);
+  background-color: cadetblue;
   text-decoration: none;
 }
 
 nav.mobile-nav {
-  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 11;
   height: 50px;
   overflow-y: hidden;
+}
+
+nav.mobile-nav ul {
+  width: 100%;
 }
 
 nav.mobile-nav ul li a {
@@ -56,20 +67,36 @@ nav.mobile-nav ul li a {
   background-color: rgb(255, 255, 255, 0.8);
   color: #000;
   font-size: 2.5em;
+  font-family: arial;
   width: 100%;
 }
 
 .burger-icon {
+  width: 25%;
   height: 50px;
   background-color: #000;
   color: #fff;
-  padding: 13px 0 0 10px;
+  padding: 20px 0 0 10px;
   font-size: 1.3em;
 }
+
 
 /*-------------------
                 Layout
              -------------------*/
+
+.logo {
+  width: 50%;
+  text-align:center;
+  padding-top: 8px;
+}
+
+.logo img {
+  width: 80%;
+}
+
+
+
 
 
 /* Produkt Anfang */
@@ -211,21 +238,11 @@ body {
             Responsive Design
             --------------------*/
 @media only screen and (min-width: 600px) {
-  .my-about p img {
-    width: 50%;
-    border-radius: 20px;
-    border-color: #fff;
-  }
-
-  header {
-    margin-top: 50px;
-  }
-
   nav.mobile-nav {
-    display: inline-block;
+    display: none;
   }
 
   nav.main-nav {
-    display: none;
+    display: inline-block;
   }
 }
