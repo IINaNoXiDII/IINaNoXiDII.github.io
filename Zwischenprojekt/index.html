@@ -6,26 +6,40 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> 
-      
-      <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-      
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 
+    <script>
+      function toggleMobileNav() {
+        var x = document.getElementById("mobile-nav");
+        if (x.style.height === "330px") {
+          x.style.height = "50px";
+        } else {
+          x.style.height = "330px";
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
-      <nav class="mobile-nav">
-        <div class="logo">
-          <i class="fas fa-bars" onclick="toggleMobileNav()"></i>
-          <img src="img/textWhite.png" alt="Firmenlogo von UrbanMove">
-        </div>
+      <nav class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Page1</a></li>
           <li><a href="#">Page2</a></li>
           <li><a href="#">Page3</a></li>
+        </ul>
+      </nav>
+
+      <nav id="mobile-nav" class="mobile-nav">
+        <ul>
+          <div class="burger-icon"><i class="fas fa-bars" onclick="toggleMobileNav()"></i></div>
+          <li><a href="#" onclick="toggleMobileNav()">Home</a></li>
+          <li><a href="#" onclick="toggleMobileNav()">Page1</a></li>
+          <li><a href="#" onclick="toggleMobileNav()">Page2</a></li>
+          <li><a href="#" onclick="toggleMobileNav()">Page3</a></li>
         </ul>
       </nav>
     </header>

@@ -12,23 +12,59 @@
 /*---------------------
 Navigation
 ---------------------*/
-.logo {
-  display: block;
+nav.mobile-nav,
+nav.main-nav {
+  position: fixed;
+  width: 100%;
   background-color: #000;
-  text-align: center;
+  padding-bottom: 20px;
+  top: 0;
 }
 
-.logo img {
-  width: 30em;
-  padding: 10px 20px 20px;
+nav.main-nav ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.logo i {
-  text-align: left;
+nav.main-nav ul li {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+nav.mobile-nav ul li a,
+nav.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(255, 128, 0);
+  padding: 4px 10px;
+}
+
+nav.mobile-nav ul li a:hover,
+nav.main-nav ul li a:hover {
+  background-color: rgb(255, 90, 0);
+  text-decoration: none;
+}
+
+nav.mobile-nav {
+  background-color: transparent;
   height: 50px;
+  overflow-y: hidden;
+}
+
+nav.mobile-nav ul li a {
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 2.5em;
+  width: 100%;
+}
+
+.burger-icon {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
   padding: 13px 0 0 10px;
   font-size: 1.3em;
-  color: #fff;
 }
 
 /*-------------------
@@ -167,18 +203,21 @@ body {
             Responsive Design
             --------------------*/
 @media only screen and (min-width: 600px) {
-  .logo {
-    display: block;
-    background-color: #000;
-    text-align: center;
+  .my-about p img {
+    width: 50%;
+    border-radius: 20px;
+    border-color: #fff;
   }
 
-  .logo img {
-    width: 30em;
-    padding: 10px 20px 20px;
+  header {
+    margin-top: 50px;
   }
-  
+
   nav.mobile-nav {
     display: inline-block;
+  }
+
+  nav.main-nav {
+    display: none;
   }
 }
