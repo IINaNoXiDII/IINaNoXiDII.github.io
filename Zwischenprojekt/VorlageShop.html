@@ -20,12 +20,11 @@
     </head>
     <body class="body">
         <section class="my-skills">
-                    <h1 class="Shop">Shop</h1>
+            <h1 class="Shop">Shop</h1>
 
             <div class="ProduktFlexBox">
-                <img class=Placeholder> 
+                <img class="Placeholder" />
                 <div class="ProduktImage">
-                    
                     <img src="img/Bollerwagen1.jpg" width="100%" />
                 </div>
 
@@ -39,16 +38,34 @@
                     </p>
 
                     <p>
-Beschreibung
+                        Beschreibung
                     </p>
-                    <p>
-                        <i class="far fa-check-circle"></i> Verfügbar
+
+                    <p id="verfuegbar">
+                        <i class="far fa-check-circle" id="fa-check-circle"></i>
+                        Verfügbar
+                    </p>
+                    <p id="nichtverfuegbar">
                         <i class="far fa-times-circle"></i> Nicht Verfügbar
+                    </p>
+                    <p id="lagerbestand">
+                        Auf Lager:
+                        <script type="text/javascript">
+                            var Anzahl = String(10);
+
+                                if (Anzah <= 0) {
+                                    #verfuegbar{ display:none; }
+                                } else {
+                                    #nichtverfuegbar {display:none; }    
+                                }
+
+                                
+                        </script>
                     </p>
                     <p></p>
                     <h3>Anzahl</h3>
-                    <p> </p>
-                    <p> Die gewünschte Anzahl auswählen</p>
+                    <p></p>
+                    <p>Die gewünschte Anzahl auswählen</p>
                     <select name="Anzah">
                         <option selected>1</option>
                         <option>2</option>
@@ -56,14 +73,11 @@ Beschreibung
                         <option>4</option>
                         <option>5</option>
                     </select>
-                <p>
-                    <p>
-                        <p>
-                            <p>
+                    <p></p>
                     <section class="PlusCart">
                         <i class="fas fa-cart-plus"></i>
                     </section>
-                    <p class= "buttontext">Hinzufügen</p>
+                    <p class="buttontext">Hinzufügen</p>
                 </div>
             </div>
         </section>
