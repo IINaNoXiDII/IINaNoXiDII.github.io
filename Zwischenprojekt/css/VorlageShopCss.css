@@ -1,12 +1,12 @@
 
-        <style>
 
-            .placeholder {
-                width="0%";
-            }
-            
+.my-skills {
+    display: none;
+}
+
+                        
             p {
-                padding-bottom: 10px;
+                padding-bottom: 100px;
             }
 
             h1 {
@@ -17,22 +17,25 @@
                 padding-bottom: 20px;
             }
 
+            
+
             body {
-                font-size: 1.5em;
+                font-size: 2em;
             }
 
-            .ProduktFlexBox {
-                display: flex;
-            }
+.mobProduktImage{
+    width: "100%";
+}
 
             .ProduktImage {
-                width: 30%;
-            }
+                width: 100%;
 
+}
             .ProduktText {
                 padding-left: 50px;
+                font-size: 30px
+            
             }
-
             .my-skills {
                 width: 33, 33%;
                 padding-bottom: 20px;
@@ -63,13 +66,25 @@
 
 @media only screen and (min-width: 600px) {
     
-    body {
-        font-size: 1em;
-    }    
-      .placeholder {
-        width: 25%;
+    .ProduktImage {
+        width: 30%;
     }
-    
+    .Shop {
+        font-size: 30px;
+    }
+    .placeholder{
+        width: 100%;
+        height: 100%;
+    }
+    .ProduktText{
+        font-size: 25px;
+    }
+    mobmy-skills{
+        display: none;
+    }
+    my-skills{
+        display: block;
+    }
 
 }
         </style>
