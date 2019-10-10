@@ -18,7 +18,13 @@
     width: "30%";
 }
 
-
+.Shop {
+    text-align: center;
+    font-size: 5em;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    
+}
 .ProduktText {
  font-size: 1em;
 padding-left: 20px;
@@ -46,18 +52,16 @@ h2 {
     width: 100%;
     height: 30%px;
 }
- .PlusCart :hover {
-  background-color: yellow;
-}
+
 
 .buttontext {
     text-align: center;
 }
 
 if (document.getElementById) {
-	var elem = document.getElementById("anzahl");
-	if (elem.scrollIntoView) {
-		elem.scrollIntoView();
+	var x = document.getElementById("lagerbestand");
+	if ('lagerbestand <= 0') {
+		();
 	}
 }
 /*--------------------------
@@ -71,6 +75,9 @@ if (document.getElementById) {
     .my-skills {
         display: block;
     }
+     .PlusCart :hover {
+  background-color: yellow;
+}
     
 
 }
