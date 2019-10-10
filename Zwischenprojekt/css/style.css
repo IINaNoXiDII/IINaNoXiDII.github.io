@@ -12,6 +12,8 @@
 /*-------------------
                 Layout
              -------------------*/
+
+
 /* Produkt Anfang */
 .product {
     position: relative;
@@ -143,5 +145,5 @@ body {
             Responsive Design
             --------------------*/
 @media (min-weight: 768px) {
-  
+
 }
