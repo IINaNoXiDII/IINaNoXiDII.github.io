@@ -101,7 +101,7 @@ h2, h3, h4, p, table,div{
 .mobile-nav .burger-icon i {
    float: left;
    color: #fff;
-
+   font-size: 30px;
    line-height: 50px;
 }
 
