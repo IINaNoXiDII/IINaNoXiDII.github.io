@@ -1,0 +1,61 @@
+
+        <style>
+            p {
+                padding-bottom: 10px;
+            }
+
+            h1 {
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            h3 {
+                padding-bottom: 20px;
+            }
+
+            body {
+                font-size: 25px;
+            }
+
+            .ProduktFlexBox {
+                display: flex;
+            }
+
+            .ProduktImage {
+                width: 30%;
+            }
+
+            .ProduktText {
+                padding-left: 50px;
+            }
+
+            .my-skills {
+                width: 33, 33%;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+            section.my-skills {
+            }
+
+            .fa-cart-plus {
+                font-size: 50px;
+                padding-top: 7px;
+            }
+
+            .PlusCart {
+                background-color: greenyellow;
+                text-align: center;
+                width: 50%;
+            }
+            
+            .Placeholder {
+                width: 25%;
+            }
+
+/*--------------------------
+            Responsive Design
+            --------------------*/
+
+@media only screen and (min-width: 600px) {
+}
+        </style>
