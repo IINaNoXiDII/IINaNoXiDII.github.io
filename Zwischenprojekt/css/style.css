@@ -167,6 +167,7 @@ ul.colors li {
     width: 16px;
     height: 16px;
 }
+
 /* Farbfelder Anfang */
 ul.colors li:nth-child(1) {
     background: #000;
