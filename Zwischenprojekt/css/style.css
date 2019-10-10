@@ -236,6 +236,7 @@ ul.colors li:nth-child(1) {
     background-color: #cf000f;
     text-decoration: none;
 }
+/* Produkt Ende */
 
 .kontaktdaten{
   margin-left: 20px;
@@ -253,8 +254,13 @@ th{
   text-align: left;
 }
 
+.footer p {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+}
 
-/* Produkt Ende */
 /*------------------
             Color & Style
              -------------------*/
