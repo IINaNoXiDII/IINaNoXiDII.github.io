@@ -199,6 +199,13 @@ body {
     background-color: cadetblue;
 }
 
+.fa-check-circle {
+  color: green;
+}
+.fa-times-circle {
+    color:red
+}
+
 /*--------------------------
             Responsive Design
             --------------------*/
