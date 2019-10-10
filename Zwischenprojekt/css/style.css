@@ -12,16 +12,23 @@
 /*---------------------
 Navigation
 ---------------------*/
+.logo {
+  display: block;
+  background-color: #000;
+  text-align: center;
+}
 
-.logo i {
-  display: flex;
-  height: 50px;
-  padding: 13px 0 0 10px;
+.logo img {
+  width: 30em;
+  padding: 10px 20px 20px;
 }
 
 .logo i {
-font-size: 1.3em;
-color: #fff;
+  text-align: left;
+  height: 50px;
+  padding: 13px 0 0 10px;
+  font-size: 1.3em;
+  color: #fff;
 }
 
 /*-------------------
@@ -161,6 +168,7 @@ body {
             --------------------*/
 @media only screen and (min-width: 600px) {
   .logo {
+    display: block;
     background-color: #000;
     text-align: center;
   }
@@ -168,5 +176,9 @@ body {
   .logo img {
     width: 30em;
     padding: 10px 20px 20px;
+  }
+  
+  nav.mobile-nav {
+    display: inline-block;
   }
 }
