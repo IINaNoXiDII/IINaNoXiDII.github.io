@@ -144,6 +144,14 @@ body {
 /*--------------------------
             Responsive Design
             --------------------*/
-@media (min-weight: 768px) {
+@media only screen and (min-width: 600px) {
+  .logo {
+    background-color: #000;
+    text-align: center;
+  }
 
+  .logo img {
+    width: 30em;
+    padding: 10px 20px 20px;
+  }
 }
