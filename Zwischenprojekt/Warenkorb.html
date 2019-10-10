@@ -3,7 +3,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Warenkorb</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -32,6 +32,7 @@
       <p>Produkt</p>
       <p>Menge</p>
       <p>Preis</p>
+      <h2>Adressdaten</h2>
       <div class="kontaktdaten">
         <label for="name">Name:</label>
         <input type="string" name="name" id="name" required="">
@@ -42,8 +43,12 @@
         <label for="ort">Ort:</label>
         <input type="string" name="ort" id="ort" required="">
       </div>
-      <div class="button">
-        <input type="submit" value="Paypal" name="paypal" id="paypal" onclick="setTimeout(3000)">
+      <h2>Bankverbindung</h2>
+      <div class="bankdaten">
+        <label for="kontoinhaber">Kontoinhaber:</label>
+        <input type="string" name="kontoinhaber" id="kontoinhaber" required="">
+        <label for="iban">IBAN:</label>
+        <input type="string" name="iban" id="iban" required="">
 
       </div>
 
