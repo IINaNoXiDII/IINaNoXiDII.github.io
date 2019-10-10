@@ -81,16 +81,20 @@ h2, h3, h4, p, table,div{
     height: 60px;
     background: #000;
     position: fixed;
-    top: 0;
-    left: 0;
     padding: 5px 20px;
     box-sizing: border-box;
     z-index: 11;
 }
 
+.mobile-nav .logo {
+    left: 60px;
+    right: 60px;
+    position: fixed;
+    text-align: center;
+    z-index: 301;
+}
+
 .mobile-nav .logo img {
-    float: right;
-    padding-right: 24%;
     height: 50px;
 }
 
