@@ -9,6 +9,21 @@
     scroll-behavior: smooth;
 }
 
+/*---------------------
+Navigation
+---------------------*/
+
+.logo i {
+  display: flex;
+  height: 50px;
+  padding: 13px 0 0 10px;
+}
+
+.logo i {
+font-size: 1.3em;
+color: #fff;
+}
+
 /*-------------------
                 Layout
              -------------------*/
