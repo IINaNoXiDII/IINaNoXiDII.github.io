@@ -98,6 +98,10 @@ h2, h3, h4, p, table,div{
     height: 50px;
 }
 
+.mobile-nav .logo2 {
+  display: none;
+}
+
 .mobile-nav .burger-icon i {
    float: left;
    color: #fff;
@@ -279,6 +283,28 @@ body {
 /*--------------------------
             Responsive Design
             --------------------*/
+@media only screen and (max-width: 430px) {
+  .mobile-nav .logo {
+    display: none;
+  }
+
+  .mobile-nav .logo2 {
+    display: block
+  }
+
+  .mobile-nav .logo2 {
+    left: 60px;
+    right: 60px;
+    position: fixed;
+    text-align: center;
+    z-index: 301;
+  }
+
+  .mobile-nav .logo2 img {
+    height: 50px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   header {
     height: 59px;
