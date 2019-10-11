@@ -5,9 +5,7 @@
 
 .ProduktFlexBox {
     display: flex;
-    padding-left: 10%   ;
-    
-
+    padding-left: 10%;
 }
 
 .ProduktImage {
@@ -23,7 +21,7 @@
     font-size: 5em;
     padding-bottom: 90px;
     padding-top: 20px;
-    
+
 }
 .ProduktText {
  font-size: 1em;
@@ -78,6 +76,6 @@ if (document.getElementById) {
      .PlusCart :hover {
   background-color: yellow;
 }
-    
+
 
 }

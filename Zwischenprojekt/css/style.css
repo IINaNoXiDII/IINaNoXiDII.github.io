@@ -128,15 +128,46 @@ h2, h3, h4, p, table,div{
     overflow: hidden;
 }
 
-.product .imgbox {
+.product .imgbox1,
+.imgbox2,
+.imgbox3,
+.imgbox4,
+.imgbox5 {
     height: 100%;
     box-sizing: border-box;
 }
 
-.product .imgbox img {
+.product .imgbox1 img,
+.imgbox2 img,
+.imgbox3 img,
+.imgbox4 img,
+.imgbox5 {
     display: block;
     width: 70%;
     margin: 20px auto 0;
+}
+
+.product .imgbox1 img {
+    width: 80%;
+}
+
+.product .imgbox2 img {
+    width: 100%;
+}
+
+.product .imgbox3 img {
+    width: 80%;
+    margin: 80px auto 0;
+}
+
+.product .imgbox4 img {
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.product .imgbox5 img {
+    width: 100%;
+    margin: 55px auto 0;
 }
 
 .details {
