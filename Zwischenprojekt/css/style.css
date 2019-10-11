@@ -269,8 +269,8 @@ th{
             Color & Style
              -------------------*/
 .warenkorbbody{
-    background-color: rgb(192,192,192);
-    }
+  background: rgb(192,192,192);
+}
 
 body {
     background-image: url(../img/manhattan.jpg);
