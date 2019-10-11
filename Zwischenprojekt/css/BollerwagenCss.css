@@ -1,17 +1,23 @@
-.my-skills {
+.my-produkt {
     display: none;
 }
 
 
 .ProduktFlexBox {
     display: flex;
-    padding-left: 10%   ;
-    
-
+    padding-left: 2%;
+    padding-top: 2%;
 }
 
+    
+    .ProduktFlexBox {
+        
+    }
+
+
+
 .ProduktImage {
-    width: 35%;
+    width: 30%;
 }
 
 .Placeholder {
@@ -28,15 +34,15 @@
 .ProduktText {
  font-size: 1em;
 padding-left: 20px;
-    width: 35%
+    width: 55%
 }
 
 p {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 h2 {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .fa-cart-plus  {
@@ -77,15 +83,15 @@ if (document.getElementById) {
             --------------------*/
 
 @media only screen and (min-width: 600px) {
-    .mobmy-skills {
+    .mobmy-produkt {
         display: none;
     }
-    .my-skills {
+    .my-produkt {
         display: block;
     }
 
-    .ProduktImage :hover {
-        background-color: rebeccapurple;
+    .PlusCart :hover {
+        background-color: yellow;
     }  
 
 }
