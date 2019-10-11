@@ -1,11 +1,13 @@
 function warenkorb() {
-  var Produkt1 = 'Bollerwagen';
-  var Preis1 = 84.99;
+  var ProduktName = 'Bollerwagen';
+  var ProduktPreis = 84.99;
+  localStorage["produkt"] = ProduktName;
 
   var Eingabe  = document.getElementById('Eingabe');
-  var Ergebnis = Preis1 * Eingabe.value;
-  alert(Produkt1 + " " + Ergebnis);
-  Eingabe.value = 0;
+  var Ergebnis = ProduktPreis * Eingabe.value;
+  localStorage["preis"] = Ergebnis;
+  localStorage["anzahl"] = Eingabe.value;
+  Eingabe.value = 1;
  }
 
 var los  = document.getElementById('los');
