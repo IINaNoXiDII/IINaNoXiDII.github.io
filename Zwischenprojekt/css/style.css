@@ -124,6 +124,10 @@ h2, h3, h4, p, table,div{
 }
 
 /* Produkt Anfang */
+
+.ausverkauft {
+    color: red;
+}
 .product {
     position: relative;
     display: inline-block;

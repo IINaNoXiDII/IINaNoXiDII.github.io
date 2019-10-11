@@ -88,6 +88,9 @@ if (document.getElementById) {
     padding-top: 4%;
 }
 
+.fa-cart-plus {
+    color: black;
+}
 /*--------------------------
             Responsive Design
             --------------------*/
