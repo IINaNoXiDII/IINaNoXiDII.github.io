@@ -92,7 +92,7 @@ if (document.getElementById) {
             Responsive Design
             --------------------*/
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .mobmy-produkt {
         display: none;
     }
