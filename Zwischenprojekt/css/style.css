@@ -270,7 +270,9 @@ th{
              -------------------*/
 
 body {
-    background-color: cadetblue;
+    background-image: url(../img/manhattan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fa-check-circle {
