@@ -64,6 +64,11 @@ if (document.getElementById) {
 		();
 	}
 }
+.fa-star, .fa-star-half-alt {
+    padding-right: 5px;
+    font-size: 25px;
+    color: gold;
+}
 
 
 
