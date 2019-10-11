@@ -101,7 +101,7 @@ if (document.getElementById) {
     }
 
     .PlusCart :hover {
-        background-color: yellow;
+        background-color: darkred;
     }  
 
 }
