@@ -2,8 +2,8 @@
 <html lang="de">
     <meta charset="utf-8" />
     <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/BollerwagenCss.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/SkateboardCss.css" />
 
         <link
             rel="stylesheet"
@@ -19,153 +19,170 @@
         />
         <link rel="stylesheet" href="css/style.css" />
 
-    <meta charset="utf-8">
-    <title>Bollerwagen</title>
-    <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8" />
+        <title>Skateboard</title>
+        <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        />
 
-    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".burger-icon i").click(function(){
-               $("nav ul").toggleClass("active")
-            })
-        })
-    </script>
-  </head>
-  <body>
-    <header>
-      <div class="mobile-nav">
-        <div class="logo">
-          <a href="#"><img src="img/textWhite.png"></a>
-        </div>
-        <div class="burger-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-
-      <nav class="main-nav">
-          <div class="logo">
-              <a href="#"><img src="img/logoWhite.png"></a>
-          </div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Page1</a></li>
-            <li><a href="#">Page2</a></li>
-            <li><a href="Warenkorb.html">Warenkorb</a></li>
-          </ul>
-      </nav>
-    </header>
-    <body class="warenkorbbody">
-        <section class="my-produkt">
-
-            <div class="ProduktFlexBox">
-                <img class="Placeholder" />
-                <div id= "ProduktImage" class="ProduktImage">
-                    <img class="bollerwagen" src="img/Bollerwagen1.jpg" alt="Bollerwagen" width="100%"/>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".burger-icon i").click(function() {
+                    $("nav ul").toggleClass("active");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-nav">
+                <div class="logo">
+                    <a href="#"><img src="img/textWhite.png"/></a>
                 </div>
+                <div class="burger-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
 
-                <div class="ProduktText" width="100%">
-                    <h2>Bollerwagen</h2>
-                    <p>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    </p>
-                    <p>
-                       <s> 119,99€ </s>
-                        <p><strong>84,99€</strong>
-                    </p>
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="#"><img src="img/logoWhite.png"/></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
 
-                    <p>
-                        Stabile Ausführung aus Metall und Holz mit Vollgummibereifung, 
-leicht zu ziehender Bollerwagen, ideal für einen Familienausflug, 
-belastbar bis 80 kg, 
-                        aus robustem Holz und Metall gefertigt. </p>
-<p>Maße: 99 x 60 x 57 cm</p>
+                    <li><a href="Warenkorb.html">Warenkorb</a></li>
+                </ul>
+            </nav>
+        </header>
+        <body class="warenkorbbody">
+            <section class="my-produkt">
+                <div class="ProduktFlexBox">
+                    <img class="Placeholder" />
+                    <div id="ProduktImage" class="ProduktImage">
+                        <img
+                            class="bollerwagen"
+                            src="img/Skateboard2.jpg"
+                            alt="Skateboard"
+                            width="100%"
+                        />
+                    </div>
 
+                    <div class="ProduktText" width="100%">
+                        <h2>Skateboard</h2>
+                        <p>
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star-half-alt"></i>
+                        </p>
 
-                    <!--<p id="verfuegbar">
+                        <p><strong>79,95€</strong></p>
+
+                        <p>
+                           Das Enuff Skateboard kommt mit robusten Achsen und härteren Bushings, welches für mehr Fahrstabilität sorgt. Das Enuff Logo Stain Deck besteht zu 100% aus Kanadischem Ahorn und wurde heiß mit American Stiff-Glue verleimt.
+                        </p>
+                       
+
+                        <!--<p id="verfuegbar">
                         <i class="far fa-check-circle" id="fa-check-circle"></i>
                         Verfügbar
                     </p> -->
-                    <p id="nichtverfuegbar">
-                        <i class="far fa-times-circle"></i> Nicht Verfügbar
-                    </p>
-                    <p id="lagerbestand">
-                        Auf Lager: 0
+                        <p id="verfuegbar">
+                            <i class="far fa-check-circle" id="fa-check-circle"></i>
+                        Verfügbar
+                        </p>
+                        <p id="lagerbestand">
+                            Auf Lager: <span style="color:green"
+                                    > 5 </span>
+                        </p>
+                        <p></p>
+                        <h3>Anzahl</h3>
+                        <p></p>
+                        <p>
+                            <select name="Anzah">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </p>
 
-                    </p>
-                    <p></p>
-                    <h3>Anzahl</h3>
-                    <p></p>
-                    <p>                     <select name="Anzah">
-                        <option selected>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select> 
-                 
-                    <section class="PlusCart">
-                        <i class="fas fa-cart-plus"></i>
-                    </section>
-                    <p class="buttontext">Hinzufügen</p>
-                </div>
-            </div>
-        </section>
-        <section class="mobmy-produkt">
-            <div class="mobProduktFlexBox">
-                <nav class="mobplaceholder"></nav>
-                <div class="mobProduktImage">
-                    <img src="img/Bollerwagen1.jpg" alt="Bollerwagen" width="100%" />
-                </div>
-
-                <div class="mobProduktText" width="100%">
-                    <h2>Produkt</h2>
-                    <p>
-                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    </p>
-   <p>
-                       <s> 119,99€ </s>
-                        <p><strong>84,99€</strong>
-                    </p>
-
-                    <p>
-                        Stabile Ausführung aus Metall und Holz mit Vollgummibereifung, 
-leicht zu ziehender Bollerwagen, ideal für einen Familienausflug, 
-belastbar bis 80 kg, 
-                        aus robustem Holz und Metall gefertigt. </p>
-<p>Maße: 99 x 60 x 57 cm
-                    </p>
-                    <p>
-                        <i class="far fa-times-circle"></i> Nicht Verfügbar
-                    </p>
-                     <p id="lagerbestand">
-                        Auf Lager: <span style="color:red"
-                                    > 0 </span>
-
-                    </p>
-                    <p></p>
-                    <h3>Anzahl</h3>
-                    <select name="Anzah">
-                        <option selected>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                    <p/>
-                    <div class="PlusCart">
-                        <i class="fas fa-cart-plus"></i>
-                        <p>Hinzufügen</p>
+                        <section class="PlusCart">
+                            <i class="fas fa-cart-plus"></i>
+                        </section>
+                        <p class="buttontext">Hinzufügen</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="mobmy-produkt">
+                <div class="mobProduktFlexBox">
+                    <nav class="mobplaceholder"></nav>
+                    <div class="mobProduktImage">
+                        <img
+                            src="img/Skateboard2.jpg"
+                            alt="Bollerwagen"
+                            width="100%"
+                        />
+                    </div>
+
+                    <div class="mobProduktText" width="100%">
+                        <h2>Produkt</h2>
+                        <p>
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star-half-alt"></i>
+                        </p>
+            
+
+                        <p><strong>79,95€</strong></p>
+
+                        <p>
+                             Das Enuff Skateboard kommt mit robusten Achsen und härteren Bushings, welches für mehr Fahrstabilität sorgt. Das Enuff Logo Stain Deck besteht zu 100% aus Kanadischem Ahorn und wurde heiß mit American Stiff-Glue verleimt.
+                        </p>
+                       
+                        <p>
+                            <i class="far fa-check-circle" id="fa-check-circle"></i>
+                        Verfügbar
+                        </p>
+                        <p id="lagerbestand">
+                            Auf Lager: <span style="color:green"
+                                    > 5 </span>
+                        </p>
+                        <p></p>
+                        <h3>Anzahl</h3>
+                        <select name="Anzah">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <p />
+                        <div class="PlusCart">
+                            <i class="fas fa-cart-plus"></i>
+                            <p>Hinzufügen</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
     </body>
-    
-    
 </html>
