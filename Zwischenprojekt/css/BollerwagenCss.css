@@ -84,6 +84,10 @@ if (document.getElementById) {
     color: gold;
 }
 
+.fa-cart-plus {
+    color: black;
+}
+
 .mobProduktImage {
     padding-top: 4%;
 }
