@@ -1,10 +1,10 @@
 function warenkorb() {
   var Produkt1 = 'Bollerwagen';
-  var Preis1 = 10.50;
+  var Preis1 = 84.99;
 
   var Eingabe  = document.getElementById('Eingabe');
   var Ergebnis = Preis1 * Eingabe.value;
-  alert(Produkt1 + "" + Ergebnis);
+  alert(Produkt1 + " " + Ergebnis);
   Eingabe.value = 0;
  }
 
