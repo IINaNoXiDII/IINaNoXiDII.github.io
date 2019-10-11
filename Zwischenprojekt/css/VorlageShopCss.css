@@ -5,13 +5,13 @@
 
 .ProduktFlexBox {
     display: flex;
-    padding-left: 30%   ;
+    padding-left: 10%   ;
     
 
 }
 
 .ProduktImage {
-    width: 30%;
+    width: 35%;
 }
 
 .Placeholder {
