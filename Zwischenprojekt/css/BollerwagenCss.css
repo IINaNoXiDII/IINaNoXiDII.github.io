@@ -1,3 +1,7 @@
+.mobProduktText {
+    font-size: 1.3em;
+}
+
 .my-produkt {
     display: none;
 }
@@ -15,9 +19,13 @@
     }
 
 
+.bollerwagen {
+    border-radius: 20px;
+}
+
 
 .ProduktImage {
-    width: 30%;
+    width: 33%;
 }
 
 .Placeholder {
@@ -76,7 +84,9 @@ if (document.getElementById) {
     color: gold;
 }
 
-
+.mobProduktImage {
+    padding-top: 4%;
+}
 
 /*--------------------------
             Responsive Design
