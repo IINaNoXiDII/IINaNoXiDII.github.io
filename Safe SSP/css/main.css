@@ -23,14 +23,12 @@ section{
     height: 8%;
     padding: 10px 0;
     text-align: center;
-    border: 2px red solid;
 }
 
 .scores{
     width: 100%;
-    height: 8%;
+    height: 7%;
     text-align: center;
-    border: 2px green solid;
 }
 
 .scores p{
@@ -39,5 +37,42 @@ section{
 }
 
 .interact{
-    width: 84%;
+    width: 100%;
+    height: 85%;
+}
+
+.choises{
+    width: 100%;
+    height: 80%;
+}
+
+.choises div{
+    width: 50%;
+}
+
+.compchoise,
+.userchoise{
+    padding: 40% 20%;
+}
+
+.buttons{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.buttons div{
+    width: 33.3%;
+}
+
+.buttons img{
+    width: 50px;
+    height: 50px;
+}
+
+.message{
+    width: 100%;
+    height: 10%;
+    padding: 10px 0;
+    text-align: center;
 }
