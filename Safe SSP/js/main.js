@@ -88,6 +88,7 @@ async function roll(rand) {
         var a = Math.floor(Math.random() * 3);
         await Sleep(200);
         console.log(a);
+        navigator.vibrate(100);
         document.getElementById("compchoise").innerHTML=translate(a);
     }
     console.log(rand);
