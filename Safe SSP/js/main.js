@@ -1,24 +1,14 @@
 
-function garbage() {
-
-
+function botWahl() {
     var bot = Math.floor(Math.random() * 3);
-
-
     return bot;
-
 }
-
-
-
 function Sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 /*schere = 0
     Stein = 1
     Papier = 2
-
-
     wenn:  == -> Draw
     wenn
         0 -> 1  Verloren
@@ -27,7 +17,7 @@ function Sleep(milliseconds) {
         1 -> 2  Veloren
         2 -> 0  Verloren
         2 -> 1  Sieg
-    */
+*/
 
 var spiele = 1;
 var pWin = 0;
@@ -36,7 +26,7 @@ var draw = 0;
 
 async function auswahl(wahl) {
     this.wahl = wahl;
-    var bot = garbage();
+    var bot = botWahl();
     console.log(wahl + ", " + bot);
     await roll(bot);
 
@@ -68,22 +58,17 @@ async function auswahl(wahl) {
         console.log("this a win");
         pWin++;
     }
-    console.log(pWin+", "+draw+", "+bWin);
-    
+    console.log(pWin + ", " + draw + ", " + bWin);
+
 }
 
-
-async function roll(rand){
-
-    for(i=0;i<10;i++){
-        var a=Math.floor(Math.random()*3);
+async function roll(rand) {
+    //random auswahl für zufälliges Zeigen von Schere/Stein/Papier
+    //Übergebener Wert gibt endgültige Auswahl vom Bot an
+    for (i = 0; i < 10; i++) {
+        var a = Math.floor(Math.random() * 3);
         await Sleep(200);
         console.log(a);
-        
-//random auswahl für zufälliges Zeigen von Schere/Stein/Papier
-//Übergebener Wert gibt endgültige Auswahl vom Bot an
     }
     console.log(rand);
-    
-    
 }
