@@ -6,6 +6,14 @@ function botWahl() {
 function Sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
+function translate(bot){
+    imgs=[
+        '<img src="./img/openned-scissors.svg">',
+        '<img src="./img/hot-stones.svg">',
+        '<img src="./img/paper-plane.svg">'
+    ]
+    return imgs[bot];
+}
 /*schere = 0
     Stein = 1
     Papier = 2
@@ -25,6 +33,7 @@ var bWin = 0;
 var draw = 0;
 
 async function auswahl(wahl) {
+    document.getElementById("userchoise").innerHTML=translate(wahl);
     this.wahl = wahl;
     var bot = botWahl();
     console.log(wahl + ", " + bot);
@@ -59,7 +68,10 @@ async function auswahl(wahl) {
         pWin++;
     }
     console.log(pWin + ", " + draw + ", " + bWin);
-
+    document.getElementById("pWin").innerHTML=pWin;
+    document.getElementById("draw").innerHTML=draw;
+    document.getElementById("bWin").innerHTML=bWin;
+    document.getElementById("compchoise").innerHTML=translate(bot);
 }
 
 async function roll(rand) {
@@ -69,6 +81,8 @@ async function roll(rand) {
         var a = Math.floor(Math.random() * 3);
         await Sleep(200);
         console.log(a);
+        document.getElementById("compchoise").innerHTML=translate(a);
     }
     console.log(rand);
+    
 }
