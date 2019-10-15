@@ -7,8 +7,37 @@
     font-family: asap;
 }
 
+.flex-container{
+    display: flex;
+}
+
 section{
     width: 100vw;
     max-width: 100%;
     height: 100vh;
+    border: 2px green solid;
+}
+
+.header{
+    width: 100%;
+    height: 8%;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px red solid;
+}
+
+.scores{
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    border: 2px green solid;
+}
+
+.scores p{
+    width: 33.3%;
+    padding: 10px 0;
+}
+
+.interact{
+    width: 84%;
 }
