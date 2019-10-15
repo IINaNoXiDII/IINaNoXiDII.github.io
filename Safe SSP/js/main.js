@@ -34,11 +34,11 @@ var pWin = 0;
 var bWin = 0;
 var draw = 0;
 
-function auswahl(wahl) {
+async function auswahl(wahl) {
     this.wahl = wahl;
     var bot = garbage();
     console.log(wahl + ", " + bot);
-    roll(bot);
+    await roll(bot);
 
     if (wahl == bot) {
         console.log("Draw");
