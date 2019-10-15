@@ -5,10 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: asap;
+    color: white;
 }
 
 body{
-    background: rgb(170, 170, 170);
+    background: url(../img/nkOUtG.jpg);
     background-size: cover;
     font-size: 20px;
 }
@@ -26,6 +27,14 @@ section{
     width: 100vw;
     max-width: 100%;
     height: 100vh;
+}
+
+#user{
+    text-align: right;
+}
+
+#comp{
+    text-align: left;
 }
 
 .header{
@@ -103,11 +112,6 @@ section{
     
     img{
         height: 130px;
-        width: auto;
-    }
-
-    .desk-buttons img{
-        height: 100px;
         width: auto;
     }
 

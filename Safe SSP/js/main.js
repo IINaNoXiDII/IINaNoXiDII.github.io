@@ -8,9 +8,9 @@ function Sleep(milliseconds) {
 }
 function translate(bot){
     imgs=[
-        '<img src="./img/openned-scissors.svg">',
-        '<img src="./img/hot-stones.svg">',
-        '<img src="./img/paper-plane.svg">'
+        '<i class="far fa-hand-scissors fa-5x">',
+        '<i class="far fa-hand-rock fa-5x">',
+        '<i class="far fa-paper-plane fa-5x">'
     ]
     return imgs[bot];
 }
