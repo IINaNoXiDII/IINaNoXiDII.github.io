@@ -41,29 +41,36 @@ async function auswahl(wahl) {
 
     if (wahl == bot) {
         console.log("Draw");
+        document.getElementById("message").innerHTML = "Unendschieden";
         draw++;
     }
     if (wahl == 0 && bot == 1) {
+        document.getElementById("message").innerHTML = "Stein schleift Schere, du hast verloren.";
         console.log("this a loss");
         bWin++;
     }
     if (wahl == 0 && bot == 2) {
+        document.getElementById("message").innerHTML = "Schere schneidet Papier, du hast gewonnen.";
         console.log("this a win");
         pWin++;
     }
     if (wahl == 1 && bot == 0) {
+        document.getElementById("message").innerHTML = "Stein schleift Schere, du hast gewonnen.";
         console.log("this a win");
         pWin++;
     }
     if (wahl == 1 && bot == 2) {
+        document.getElementById("message").innerHTML = "Papier bedeckt Stein, du hast verloren.";
         console.log("this a loss");
         bWin++;
     }
     if (wahl == 2 && bot == 0) {
+        document.getElementById("message").innerHTML = "Schere schneidet Papier, du hast verloren.";
         console.log("this a loss");
         bWin++;
     }
     if (wahl == 2 && bot == 1) {
+        document.getElementById("message").innerHTML = "Papier bedeckt Stein, du hast gewonnen.";
         console.log("this a win");
         pWin++;
     }
