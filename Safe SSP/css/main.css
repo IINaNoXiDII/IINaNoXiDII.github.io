@@ -94,6 +94,11 @@ section{
         height: 100px;
     }
 
+    .desk-buttons img:hover{
+        width: 120px;
+        height: 120px;
+    }
+
     .userchoise{
     padding: unset;
     }
