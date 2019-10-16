@@ -77,6 +77,7 @@ async function roll(sleep) {
         for (f = 0; f <= 2; f++) {
             console.log(f);
             await Sleep(sleep);
+            navigator.vibrate(sleep/2);
             document.getElementById("compchoise").innerHTML = translate(f);
         }
         f = 0;
