@@ -14,18 +14,7 @@ function translate(bot){
     ]
     return imgs[bot];
 }
-/*schere = 0
-    Stein = 1
-    Papier = 2
-    wenn:  == -> Draw
-    wenn
-        0 -> 1  Verloren
-        0 -> 2  Sieg
-        1 -> 0  Sieg
-        1 -> 2  Veloren
-        2 -> 0  Verloren
-        2 -> 1  Sieg
-*/
+
 
 var spiele = 1;
 var pWin = 0;
@@ -81,6 +70,44 @@ async function auswahl(wahl) {
     document.getElementById("compchoise").innerHTML=translate(bot);
 }
 
+async function roll(rand){
+    for(i=0;i<10;i++){
+        for(f=0;f<=2;f++){
+            console.log(f);
+            await Sleep(80);
+            document.getElementById("compchoise").innerHTML=translate(f);
+        }
+        f = 0;
+    }
+    console.log(rand);
+    
+}
+
+
+/*
+################################################################
+#                           Legacy Code                        #
+#    wird nicht mehr gebraucht, bleibt aber erstmal mit dabei, #
+#      falls mal alte Ideen wieder ausgegraben werden müssen   #
+################################################################
+
+Basic game Logic
+------------------
+/*schere = 0
+    Stein = 1
+    Papier = 2
+    wenn:  == -> Draw
+    wenn
+        0 -> 1  Verloren
+        0 -> 2  Sieg
+        1 -> 0  Sieg
+        1 -> 2  Veloren
+        2 -> 0  Verloren
+        2 -> 1  Sieg
+*/
+
+
+/*
 async function roll(rand) {
     //random auswahl für zufälliges Zeigen von Schere/Stein/Papier
     //Übergebener Wert gibt endgültige Auswahl vom Bot an
@@ -94,3 +121,4 @@ async function roll(rand) {
     console.log(rand);
     
 }
+*/
