@@ -6,8 +6,8 @@ function botWahl() {
 function Sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
-function translate(bot){
-    imgs=[
+function translate(bot) {
+    imgs = [
         '<i class="far fa-hand-scissors fa-5x">',
         '<i class="far fa-hand-rock fa-5x">',
         '<i class="far fa-paper-plane fa-5x">'
@@ -22,7 +22,7 @@ var bWin = 0;
 var draw = 0;
 
 async function auswahl(wahl) {
-    document.getElementById("userchoise").innerHTML=translate(wahl);
+    document.getElementById("userchoise").innerHTML = translate(wahl);
     this.wahl = wahl;
     var bot = botWahl();
     console.log(wahl + ", " + bot);
@@ -64,23 +64,27 @@ async function auswahl(wahl) {
         pWin++;
     }
     console.log(pWin + ", " + draw + ", " + bWin);
-    document.getElementById("pWin").innerHTML=pWin;
-    document.getElementById("draw").innerHTML=draw;
-    document.getElementById("bWin").innerHTML=bWin;
-    document.getElementById("compchoise").innerHTML=translate(bot);
+    document.getElementById("pWin").innerHTML = pWin;
+    document.getElementById("draw").innerHTML = draw;
+    document.getElementById("bWin").innerHTML = bWin;
+    document.getElementById("compchoise").innerHTML = translate(bot);
 }
+var sleep = 80;
+async function roll(rand) {
 
-async function roll(rand){
-    for(i=0;i<10;i++){
-        for(f=0;f<=2;f++){
+    for (i = 0; i < 9; i++) {
+        for (f = 0; f <= 2; f++) {
             console.log(f);
-            await Sleep(80);
-            document.getElementById("compchoise").innerHTML=translate(f);
+            await Sleep(sleep);
+            document.getElementById("compchoise").innerHTML = translate(f);
         }
         f = 0;
+        sleep = sleep * 1.2;
+        console.log(sleep);
+
     }
     console.log(rand);
-    
+
 }
 
 
@@ -119,6 +123,6 @@ async function roll(rand) {
         document.getElementById("compchoise").innerHTML=translate(a);
     }
     console.log(rand);
-    
+
 }
 */
