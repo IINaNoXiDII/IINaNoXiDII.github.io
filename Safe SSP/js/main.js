@@ -22,11 +22,12 @@ var bWin = 0;
 var draw = 0;
 
 async function auswahl(wahl) {
+    var sleep = 80;
     document.getElementById("userchoise").innerHTML = translate(wahl);
     this.wahl = wahl;
     var bot = botWahl();
     console.log(wahl + ", " + bot);
-    await roll(bot);
+    await roll(sleep);
 
     if (wahl == bot) {
         console.log("Draw");
@@ -69,8 +70,8 @@ async function auswahl(wahl) {
     document.getElementById("bWin").innerHTML = bWin;
     document.getElementById("compchoise").innerHTML = translate(bot);
 }
-var sleep = 80;
-async function roll(rand) {
+
+async function roll(sleep) {
 
     for (i = 0; i < 9; i++) {
         for (f = 0; f <= 2; f++) {
@@ -83,7 +84,7 @@ async function roll(rand) {
         console.log(sleep);
 
     }
-    console.log(rand);
+    
 
 }
 
