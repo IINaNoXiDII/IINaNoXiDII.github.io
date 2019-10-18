@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SafeBoard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>SafeBoard</h1>
+    </header>
+    <div class="flex-container flex-box">
+        <div class="top">
+            <div id="flex-00">
+                <div id="flex-000">
+                    <div id="flex-0001" class="flex-box">
+                        <h3>neu</h3>
+                        <div id="newDiv" class="scrollbar"></div>
+                    </div>
+                    <div id="flex-0002" class="flex-box">
+                        <h3>warten</h3>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="flex-001" class="flex-box">
+                    <h3>in arbeit</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="flex-01" class="flex-box">
+                <h3>brainstorm</h3>
+                <div class="brainstorm" id="Brainstorm">
+                    <p>neue ideen</p>
+
+                    <div class="button">
+                        <input type="text" placeholder="neues Element" id="new">
+                        <button onclick="neuesElement()">create</button>
+                    </div>
+                    <div class="button">
+                        <input type="number" name="" id="del">
+                        <button onclick="del()">delete</button>
+                    </div>
+                    <div class="button">
+                        <input type="number" name="" id="alter">
+                        <button onclick="switchToNew()">alter</button>
+                    </div>
+            
+                    <br>
+                    <br>
+                </div>
+                <div id="brain" class="scrollbar">
+                    <div id="myDiv"></div>
+                </div>
+            </div>
+        </div>
+        <div id="flex-02">
+            <div id="flex-002" class="flex-box">
+                <h3>abgeschlossen</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    </p>
+                </div>
+            </div>
+            <div id="flex-003" class="flex-box">
+                <h3>kontakt</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>&copy; SafeBoard</h3>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
