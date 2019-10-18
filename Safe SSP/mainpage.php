@@ -1,3 +1,5 @@
+<?php include_once("php/secure.inc.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
+        <a href="?logout=true">logout</a> 
     <section>
         <div class="header flex-container">
             <h1><img class="h1" src="./img/cooltext338546232751032.png"></h1>
