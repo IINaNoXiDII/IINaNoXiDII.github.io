@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Warenkorb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body onload="getCart()">
+    <header>
+        <div class="flex-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/191010-ehy-itw-urbanMove-logo-white-1000x167.png">
+                </a>
+            </div>
+            <div class="desktop-nav">
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="../html/lp_produkte_fahrrad.html" >Fahrräder</a></li>
+                        <li><a href="../html/lp_produkte_schuhe.html" >Schuhe</a></li>
+                        <li><a href="../html/lp_produkte_rollen.html" >Rollmaterial</a></li>
+                        <li><a href="../html/lp_warenkorb.html" class="iconhover"><i class="fas fa-shopping-cart deskcart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <nav id="nav-mobile" class="nav-mobile">
+        <div class="nav-list">
+            <ul>
+                <li><a href="../html/lp_produkte_fahrrad.html" onclick="hideMobileNav()">Fahrräder</a></li>
+                <li><a href="../html/lp_produkte_schuhe.html" onclick="hideMobileNav()">Schuhe</a></li>
+                <li><a href="../html/lp_produkte_rollen.html" onclick="hideMobileNav()">Unterwegs auf Rollen</a></li>
+            </ul>
+        </div>
+        <div class="flex-container nav-menu">
+            <div class="burger">
+                <i class="fas fa-bars" id="burger" onclick="toggleMobileNav()"></i>
+            </div>
+            <div class="shopcart">
+                <a href="../html/lp_warenkorb.html">
+                    <i class="fas fa-shopping-cart" id="shopcart"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="korb">
+        <h2>Akuteller Gesamtpreis: <span id="gesamt">0</span> €</h2>
+        
+            
+    </div>
+    <div class="flex-container flex-wrapper end">
+        <form class="bestellen" action="order.html" method="GET" onsubmit="return validate()">
+            <div class="korb">
+                <div class="flex-container person">
+                    <div class="personalien">
+                        <p>Vorname: </p>
+                        <p>Nachname: </p>
+                    </div>
+                    <div>
+                        <input type="text" name="vorname" id="vorname" required placeholder="Vorname"><br>
+                        <input type="text" name="name" id="name" required placeholder="Nachname">
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <input type="text" name="Iban-Country" id="Iban-Country" max=2 required placeholder="XX">
+                        </th>
+                        <th>
+                            <input type="text" name="iban" id="iban" required placeholder="99 1234 56789 1234 5678 90">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Ländercode (DE)</td>
+                        <td>IBAN <span id="prove"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="korb">
+                <div class="flex-container person">
+                    <div class="personalien">
+                        <p>Straße: </p>
+                        <p>Hausnummer: </p>
+                        <p>Postleitzahl: </p>
+                        <p>Stadt: </p>
+                    </div>
+                    <div>
+                        <input type="text" name="vorname" id="" required placeholder="Straße"><br>
+                        <input type="text" name="name" id=""  required placeholder="Hausnummer"><br>
+                        <input type="number" name="name" id="" min="10000" max="99999"required placeholder="Postleitzahl"><br>
+                        <input type="text" name="name" id="" required placeholder="Stadt">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">bestellen</button>
+        </form>
+        <div>
+            <button id="reset" onclick="reset()">reset</button>
+        </div>
+    </div>
+    
+
+    <footer>
+            <div class="footerp">
+                <p>
+                    <a href="../html/philosophie.html">
+                        <em>Firmenphilosophie</em>
+                    </a>
+                </p>
+                <p>
+                    <a href="../html/impressum.html">
+                        <em>Impressum</em> 
+                    </a>
+                </p>
+                <p>    
+                    <a>
+                        <strong>Urban>Move&reg;</strong>   
+                    </a>
+                </p>
+                <div class="flex-container footerp">
+                    <div>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook-square fa-3x icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter-square fa-3x icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram fa-3x icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://reddit.com">
+                            <i class="fab fa-reddit-square fa-3x icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
