@@ -1,3 +1,5 @@
+var slotroll = document.getElementById("roll");
+
 
 function botWahl() {
     var bot = Math.floor(Math.random() * 3);
@@ -73,6 +75,8 @@ async function auswahl(wahl) {
 
 async function roll(sleep) {
 
+    slotroll.play();
+
     for (i = 0; i < 9; i++) {
         for (f = 0; f <= 2; f++) {
             console.log(f);
@@ -85,8 +89,8 @@ async function roll(sleep) {
         console.log(sleep);
 
     }
-    
 
+    slotroll.pause();
 }
 
 
