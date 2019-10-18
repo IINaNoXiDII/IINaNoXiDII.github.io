@@ -8,7 +8,7 @@ session_start();
 
 if(isset($_POST['n'])){
 $_SESSION['user'] = ($_POST['n'] );
-header("Location: mainpage.php");
+header("Location: ../menue.php");
 exit; //weiter Code ausführung unterbinden
 }
 
