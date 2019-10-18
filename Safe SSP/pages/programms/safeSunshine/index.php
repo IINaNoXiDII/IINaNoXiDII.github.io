@@ -1,5 +1,5 @@
 <?php
-  include_once("php/secure.inc.php")
+  include_once("./php/secure.inc.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
