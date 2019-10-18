@@ -1,4 +1,5 @@
 var slotroll = document.getElementById("roll");
+var winsound = document.getElementById("win");
 
 
 function botWahl() {
@@ -44,11 +45,13 @@ async function auswahl(wahl) {
     if (wahl == 0 && bot == 2) {
         document.getElementById("message").innerHTML = "Schere schneidet Papier, du hast gewonnen.";
         console.log("this a win");
+        winsound.play();
         pWin++;
     }
     if (wahl == 1 && bot == 0) {
         document.getElementById("message").innerHTML = "Stein schleift Schere, du hast gewonnen.";
         console.log("this a win");
+        winsound.play();
         pWin++;
     }
     if (wahl == 1 && bot == 2) {
@@ -64,6 +67,7 @@ async function auswahl(wahl) {
     if (wahl == 2 && bot == 1) {
         document.getElementById("message").innerHTML = "Papier bedeckt Stein, du hast gewonnen.";
         console.log("this a win");
+        winsound.play();
         pWin++;
     }
     console.log(pWin + ", " + draw + ", " + bWin);

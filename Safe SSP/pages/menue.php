@@ -13,7 +13,7 @@
 
 <body>
     <?php 
-        echo "Willkommen ".$_SESSION['user'];
+        echo "Willkommen ".$_SESSION['n'];
         
         
     ?>

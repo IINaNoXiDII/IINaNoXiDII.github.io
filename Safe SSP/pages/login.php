@@ -14,9 +14,10 @@
 <body>
     <h1> Anmeldung </h1>
 
-    <form method="GET">
+    <form method="POST">
         <input type="text" name="n" placeholder="Dein Name" required><br>
-        <input type="submit" value="anmelden">
+        <input type="password" name="p" placeholder="Passwort eingeben" required><br>
+        <input type="submit" value="Anmelden" />
     </form>
 </body>
 

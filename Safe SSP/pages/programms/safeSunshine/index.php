@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <a href="?logout=true">logout</a>
     <section>
         <div class="header flex-container">
             <h1><img class="h1" src="./img/cooltext338546232751032.png"></h1>
@@ -57,13 +56,14 @@
         </div>
         <!-- <audio controls loop>
             <source src="./mp3/WhatsApp Audio 2019-10-18 at 13.24.44 (1).mp4" type="audio/mpeg">
-        </audio>
-        <audio controls loop>
-            <source src="./mp3/WhatsApp Audio 2019-10-18 at 13.24.44.mp4" type="audio/mpeg">
         </audio> -->
+        <audio id="win">
+            <source src="./mp3/WhatsApp Audio 2019-10-18 at 13.24.44.mp4" type="audio/mpeg">
+        </audio>
         <audio loop id="roll">
             <source src="./mp3/WhatsApp Audio 2019-10-18 at 13.31.44.mp4" type="audio/mpeg">
         </audio>
+        <a href="?logout=true">logout</a>
     </section>
     <script src="./js/main.js"></script>
 </body>

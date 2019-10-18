@@ -3,7 +3,7 @@
 
 session_start();
 //wenn keine Session Existiert
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['user']) && !isset($_SESSION['passwort'])){
     //User umleiten auf Anmeldeseite
     header("Location: /Safe SSP/index.php");
     exit;
