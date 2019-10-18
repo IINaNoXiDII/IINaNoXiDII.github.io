@@ -13,10 +13,14 @@ function check($password){
     return $fehler;
 }
 
-if(isset($_POST['p']) && $_POST['p'] != ""){
-    $fehler = check($_POST['p']);
+if(isset($_GET['n'])){
+    $_SESSION['user'] = $_GET['n'];
+}
+
+if(isset($_GET['p']) && $_GET['p'] != ""){
+    $fehler = check($_GET['p']);
     if($fehler == ""){
-    $_SESSION['passwort'] = ($_POST['p'] );
+    $_SESSION['passwort'] = ($_GET['p'] );
     header("Location: /Safe SSP/pages/menue.php");
     exit; //weiter Code ausführung unterbinden
     }else{
@@ -24,6 +28,9 @@ if(isset($_POST['p']) && $_POST['p'] != ""){
     }
 }
 
+if(isset($_GET['n'])){
+    $_SESSION['user'] = $_GET['n'];
+}
 
 // if(isset($_GET['n'])){
 // $_SESSION['user'] = $_GET['n'];
