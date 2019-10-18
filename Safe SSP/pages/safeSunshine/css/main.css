@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: asap;
+    color: white;
+}
+
+body{
+    background: url(../img/nkOUtG.jpg);
+    background-size: cover;
+    font-size: 20px;
+}
+
+img{
+    height: 50px;
+    width: auto;
+}
+
+.flex-container{
+    display: flex;
+}
+
+section{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+}
+
+#user{
+    text-align: right;
+}
+
+#comp{
+    text-align: left;
+}
+
+.header{
+    width: 100%;
+    height: 12%;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.header #l1{
+    position: absolute;
+    left: 20px;
+}
+
+.header #l2{
+    position: absolute;
+    right: 20px;
+}
+
+.scores{
+    width: 100%;
+    height: 7%;
+    text-align: center;
+}
+
+.scores p{
+    width: 33.3%;
+    padding: 10px 0;
+}
+
+.interact{
+    width: 100%;
+    height: 78%;
+}
+
+.choises{
+    width: 100%;
+    height: 70%;
+}
+
+.choises div{
+    width: 50%;
+}
+
+.compchoise,
+.userchoise{
+    padding: 20%;
+}
+
+.buttons{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.buttons div{
+    width: 33.3%;
+}
+
+.message{
+    width: 100%;
+    height: 10%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.desk-buttons{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 900px){
+    
+    img{
+        height: 130px;
+        width: auto;
+    }
+
+    .header h1 img{
+        height: 70px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .desk-buttons i:hover{
+        font-size: 6em;
+    }
+
+    .userchoise{
+    padding: unset;
+    }
+
+    .userchoise p{
+        display: none;
+    }
+
+    .compchoise{
+        padding: 10% 18%;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .choises{
+        height: 90%;
+    }
+
+    .userchoise .images,
+    .images .desk-buttons{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .desk-buttons .desk{
+        width: 100%;
+        height: 33.3%;
+        padding: 10% 0;
+    }
+
+    .desk-buttons{
+        display: block;
+    }
+}
