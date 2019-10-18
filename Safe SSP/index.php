@@ -1,6 +1,3 @@
-<?php
-    include_once("./pages/php/secure.inc.php")
-?>
 <!DOCTYPE html>
 <html lang="en">
 
