@@ -1,5 +1,5 @@
 <?php
-  include_once("php/login.inc.php")
+  include_once("./php/login.inc.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
