@@ -1,5 +1,5 @@
 <?php
-  include_once("./php/login.inc.php")
+    include_once("./php/login.inc.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
 <body>
     <h1> Anmeldung </h1>
 
-    <form method="POST" action="./menue.php">
+    <form method="GET">
         <input type="text" name="n" placeholder="Dein Name" required><br>
         <input type="submit" value="anmelden">
     </form>

@@ -5,7 +5,7 @@ session_start();
 //wenn keine Session Existiert
 if(!isset($_SESSION['user'])){
     //User umleiten auf Anmeldeseite
-    header("Location: index.php");
+    header("Location: /Safe SSP/index.php");
     exit;
 }
 ###################################
@@ -14,7 +14,7 @@ if(!isset($_SESSION['user'])){
 if(isset($_GET['logout'])){
     session_unset();
     session_destroy(); //auflösen der Session
-    header("Location: index.php");
+    header("Location: /Safe SSP/index.php");
     exit;
 }
 

@@ -6,9 +6,9 @@ session_start();
 
 //Wenn Querystring enthält variablenname n
 
-if(isset($_POST['n'])){
-$_SESSION['user'] = ($_POST['n'] );
-header("Location: ../menue.php");
+if(isset($_GET['n'])){
+$_SESSION['user'] = $_GET['n'];
+header("Location: /Safe SSP/pages/menue.php");
 exit; //weiter Code ausführung unterbinden
 }
 

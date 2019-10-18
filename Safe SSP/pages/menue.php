@@ -1,5 +1,5 @@
 <?php
-    include_once("./pages/php/secure.inc.php")
+    include_once("./php/secure.inc.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,13 @@
 </head>
 
 <body>
-    <a href="./programms/safeSunshine/">safeSunshine</a>
+    <?php 
+        echo "Willkommen ".$_SESSION['user'];
+        
+        
+    ?>
+    <br>
+    <a href="./programms/safeSunshine/index.php">safeSunshine</a>
 </body>
 
 </html>
