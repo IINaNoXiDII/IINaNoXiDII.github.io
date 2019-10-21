@@ -1,0 +1,131 @@
+/*-------------------
+            reset
+        ---------------------*/
+        
+/* footer{
+    border: 2px rgb(255, 0, 0) solid;
+} */
+
+/* .flex-container div{
+    border: 2px green solid;
+} */
+
+/* .flex-container{
+    border: 2px blue solid;;
+} */
+
+
+/*-------------------
+            footer
+        ---------------------*/
+
+footer{
+    background-color: #252525;
+    width: 100vw;
+    height: 100vh;
+}
+
+footer h3{
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+  
+footer ul{
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: #0f0;
+}
+
+.footerlist{
+    height: 70%;
+}
+
+.emptydiv{
+    height: 10%;
+    padding: 0 20px
+}
+.footerdiv{
+    height: 30%;
+    padding: 0 20px;
+}        
+
+ul.child{
+    border-bottom: 1px #fff solid;
+    padding: 15px 20px 10px 20px;
+}
+
+ul.child li{
+    padding: 5px 0 5px 18px;
+}
+
+ul.social{
+    padding-bottom: 18px;
+}
+
+ul.social li{
+    display: inline;
+    padding: 5px 20px;
+}
+
+.bedingungen{
+    height: 40%;
+}
+
+.copyright{
+    height: 60%;
+}
+
+.rights{
+    height: 30%;
+    padding: 20px;
+    background: linear-gradient(180deg,#151515 0,#2e2e2e 300px,#000 1000px);
+}
+
+.rights ul{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rights ul li{
+    display: inline;
+    padding: 0 15px;
+}
+
+.rights .copyright{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (min-width: 900px){
+
+    .footerlist{
+        height: 60%;
+    }
+
+    .rights{
+        height: 40%;
+    }
+
+    .rights div{
+        height: 50%;
+    }
+
+    .emptydiv{
+        height: 30%;
+    }
+
+    .footerdiv{
+        width: 33.3%;
+        height: 70%;
+    }
+}

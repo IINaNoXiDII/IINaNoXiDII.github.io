@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
+
+/*-------------------
+
+            reset
+
+        ---------------------*/
+
+
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: asap;
+
+
+
+}
+
+body{
+
+    background-color: #353535;
+
+    color: #fff;
+
+}
+
+
+
+/*-------------------
+
+            layout
+
+        ---------------------*/
+
+
+
+iframe{
+
+    width: 100vw;
+
+    max-width: 100%;
+
+    border: none;
+
+    /* border: 2px green solid; */
+
+}
+
+
+
+.headerframe{
+
+    height: 18vw;
+
+}
+
+
+
+.navframe{
+
+    position: fixed;
+
+    bottom: 0;
+
+    height: 300px;
+
+    /* border: 2px red solid; */
+
+}
+
+
+
+.footerframe{
+
+    height: 200vw;
+
+}
+
+
+
+.main{
+
+    /* border: 2px red solid; */
+
+    width: 100vw;
+
+    max-width: 100%;
+
+    height: 100vw;
+
+}
+
+
+
+section .main{
+
+    font-size: 17px;
+
+    padding: 2vw 6vw;
+
+}
+
+
+
+.main p{
+
+    font-size: 17px;
+
+}
+
+
+
+.width-100{
+
+    width: 100%;
+
+}
+
+
+
+.height-100{
+
+    height: 100%;
+
+}
+
+
+
+.flex-container{
+
+    display: flex;
+
+}
+
+
+
+.flex-wrapper{
+
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+/*-------------------
+
+            style
+
+        ---------------------*/
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px){
+
+
+
+    .headerframe{
+
+        height: 8vw;
+
+    }
+
+
+
+    .navframe{
+
+        display: none;
+
+    }
+
+
+
+    .footerframe{
+
+        height: 30vw;
+
+    }
+
+    .main{
+
+	height: 30vw;
+
+    }
+
+    .main h1{
+
+	font-size: 50px;
+
+    }
+
+    .main p{
+
+        font-size: 22px;
+
+    }
+
+}

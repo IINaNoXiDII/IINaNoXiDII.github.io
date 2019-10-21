@@ -1,0 +1,88 @@
+/*-------------------
+            reset
+        ---------------------*/
+    
+body{
+    background-color: transparent;
+    /* background-color: #656565; */
+}
+
+/* nav{
+    border: 2px #0f0 solid;
+} */
+
+
+
+/*-------------------
+            nav
+        ---------------------*/
+
+
+nav{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+
+nav a{
+    color: #fff;
+    background-color: #ff7f00bf;
+    text-decoration: none;
+}
+
+.nav-mobile{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #ff8000;
+}
+
+.nav-mobile ul li{
+    margin-bottom: 1px;
+}
+
+.nav-mobile ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1em;
+}
+
+.nav-list{
+    position: relative;
+    width: 100%;
+}
+
+.nav-list ul{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-menu{
+    /* position: absolute; */
+    width: 100%;
+}
+
+.shopcart{
+    position: absolute;
+    left: 0;
+}
+
+.burger{
+    position: absolute;
+    right: 0;
+}
+
+#burger,
+#shopcart{
+    padding: 10px 25px;
+    font-size: 2.5em;
+}

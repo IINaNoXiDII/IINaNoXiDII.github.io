@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
+
+/*----------------------
+            reset
+        -----------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: asap;
+}
+body{
+    color: #fff;
+    background-color: #000;
+}
+
+/*----------------------
+            layout
+        -----------------------*/
+
+h1,
+h2,
+h3,
+p{
+    padding: 10px 20px;
+}
+
+.idea{
+    margin: 5px 20px;
+}
+
+h3{
+    padding: 10px 0 10px 20px;
+}
+
+input{
+    margin-left: 20px;
+}
+
+.button{
+    margin: 5px 0px;
+}
+
+#brain{
+    width: 100%;
+    height: 600px;
+}
+
+#newDiv{
+    width: 100%;
+    height: 350px;
+}
+
+.scrollbar{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+/*----------------------
+            style
+        -----------------------*/
+
+header,
+footer{
+    color: #fff;
+}
+
+.flex-box{
+    border: 2px rgb(255, 255, 255) solid;
+}
+
+#neue-Elemente{
+    border: 2px green solid;
+}
+
+.idea{
+    color: #000;
+    background: #ff8000; 
+}
+
+#flex-0001{
+    background-color: #276EF1;
+}
+
+#flex-0002{
+    background-color: #eba339;
+}
+
+#flex-001{
+    background-color: #e64545;
+}
+
+#flex-01{
+    background-color: #68d153;
+}
+
+#flex-002{
+    background-color: #f0559d;
+}
+
+#flex-003{
+    background-color: #7c2ac0;
+}
+
+
+
+
+@media only screen and (min-width: 600px){
+
+    body{
+        /* background-color: rgb(17, 131, 42); */
+        color: #000;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1004px;
+    }
+
+    .top{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 800px;
+    }
+
+    #flex-00{
+        display: flex;
+        flex-wrap: wrap;
+        width: 66%;
+    }
+
+    #flex-000{
+        width: 50%;
+    }
+
+    #flex-0001,
+    #flex-0002{
+        height: 50%;
+    }
+
+    #flex-001{
+        width: 50%;
+    }
+
+    #flex-01{
+        width: 34%;
+    }
+
+    #flex-02{
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    #flex-002{
+        width: 66%;
+    }
+
+    #flex-003{
+        width: 34%
+    }
+}
